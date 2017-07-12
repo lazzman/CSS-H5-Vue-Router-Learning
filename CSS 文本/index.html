@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 文本</title>
+
+    <style>
+
+        h1{
+            /*文本颜色*/
+            color: red;
+
+            /*文本对齐方式*/
+            text-align: center;
+
+            /*文本修饰
+            text-decoration 属性用来设置或删除文本的装饰。从设计的角度看 text-decoration属性主要是用来删除链接的下划线：*/
+            /*text-decoration: overline; !*上划线*!*/
+            text-decoration: line-through; /*中划线*/
+            /*text-decoration: underline; !*下划线*!*/
+
+            /*文本转换
+            文本转换属性是用来指定在一个文本中的大写和小写字母。可用于所有字句变成大写或小写字母，或每个单词的首字母大写。*/
+            text-transform: capitalize; /*首字母大写*/
+            /*text-transform: lowercase; !*全小写*!*/
+            /*text-transform: uppercase; !*全大写*!*/
+
+            /*文本阴影*/
+            text-shadow: 2px 2px aquamarine;
+        }
+
+        .date{
+            /*文本颜色*/
+            color: coral;
+            /*文本对齐方式*/
+            text-align: right;
+
+            /*文本方向*/
+            direction: rtl;
+        }
+
+        p.main{
+            /*文本颜色*/
+            color: black;
+            /*文本对齐方式
+            当text-align设置为"justify"，每一行被展开为宽度相等，左，右外边距是对齐（如杂志和报纸）。*/
+            text-align: justify;
+            /*文本缩进 文本缩进属性是用来指定文本的第一行的缩进。*/
+            text-indent: 30px;
+        }
+
+        p.warn a{
+            /*去除超链接下划线*/
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS text-align 实例</h1>
+    <p class="date">2015 年 3 月 14 号</p>
+    <p class="main">“当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”</p>
+    <p class="warn"><b>注意：</b> 重置浏览器窗口大小查看 &quot;<a href="http://www.runoob.com/css/css-text.html">justify</a> 是如何工作的。</p>
+
+<pre>
+    所有CSS文本属性。
+    属性	描述
+    color	设置文本颜色
+    direction	设置文本方向。
+    letter-spacing	设置字符间距
+    line-height	设置行高
+    text-align	对齐元素中的文本
+    text-decoration	向文本添加修饰
+    text-indent	缩进元素中文本的首行
+    text-shadow	设置文本阴影
+    text-transform	控制元素中的字母
+    unicode-bidi	设置或返回文本是否被重写
+    vertical-align	设置元素的垂直对齐
+    white-space	设置元素中空白的处理方式
+    word-spacing	设置字间距
+</pre>
+
+</body>
+</html>
