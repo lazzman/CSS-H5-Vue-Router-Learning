@@ -7,15 +7,31 @@
 
     <style>
         div {
+            height: 600px;
+            width: 1000px;
+
             /*背景颜色*/
             background-color: azure;
             /*背景图片*/
-            background-image: url("paper.gif");
+            background-image: url("img_tree.png");
             /*背景图片水平或垂直重复平铺或禁止平铺*/
-            /* background-repeat: no-repeat; 禁止平铺*/
-            background-repeat: repeat-x; /*水平平铺*/
+            /* background-repeat: repeat-x; 水平平铺*/
+            background-repeat: no-repeat; /* 禁止平铺*/
+            /*背景图片位置*/
+            background-position: right bottom;
+            /*背景图片固定或者随着页面滚动*/
+            background-attachment: fixed;/*背景图像是固定的*/
+            /*background-attachment: scroll;!*背景图片随页面的其余部分滚动。这是默认*!*/
+            /*background-attachment: inherit;!*从父元素继承*!*/
         }
 
+        .div_jx{
+            height: 600px;
+            width: 1000px;
+
+            /*简写*/
+            background: #cad23e url("paper.gif") no-repeat center;
+        }
 
     </style>
 
@@ -34,6 +50,7 @@
     </pre>
 </div>
 
+<div class="div_jx">简写</div>
 
 
 
