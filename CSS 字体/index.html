@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 字体</title>
+
+    <style>
+        /*CSS字体属性定义文本的字体系列、大小、加粗、风格和变形*/
+
+        /*引用自定义字体*/
+        @font-face {
+            font-family: myfont;
+            src: url("思源黑体-极细.ttf");
+        }
+
+        p{
+            /*字体系列*/
+            /*font-family: 幼圆;*/
+            font-family: myfont;
+
+            /*字体大小*/
+            font-size: medium;
+            /*font-size: smaller;*/
+
+            /*字体风格*/
+            /*font-style: italic;*/
+            font-style: normal;
+            /*font-style: oblique;*/
+
+            /*以小型大写字体或正常字体显示文本*/
+            font-variant: normal;
+
+            /*字体的粗细*/
+            /*font-weight: normal;*/
+            font-weight: 200;
+        }
+
+    </style>
+</head>
+<body>
+    <p>你好！ Hello!</p>
+
+</body>
+</html>
