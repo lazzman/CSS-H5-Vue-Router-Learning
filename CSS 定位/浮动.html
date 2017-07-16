@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+
+    <style>
+        /*
+        浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
+        由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+
+        1. 浮动：
+            float属性：
+                left 元素向左浮动
+                right 元素向右浮动
+                none 元素不浮动
+                inherit 从父类元素继承浮动属性
+        2. 清除浮动：
+            clear属性：
+                left、right 去掉元素向左、向右浮动
+                both 左右两侧均去掉浮动
+                inherit 从父类元素继承clear属性
+
+        */
+
+        #fd{
+            width: 100px;
+            height: 100px;
+            background-color: #B2FF99;
+        }
+
+        #sd{
+            width: 100px;
+            height: 100px;
+            background-color: #FF704D;
+        }
+
+        #td{
+            width: 100px;
+            height: 100px;
+            background-color: #FFFF85;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="fd"></div>
+<div id="sd"></div>
+<div id="td"></div>
+
+</body>
+</html>
