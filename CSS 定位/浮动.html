@@ -6,6 +6,8 @@
 
     <style>
         /*
+        更多例子：http://www.w3school.com.cn/css/css_positioning_floating.asp
+
         浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。
         由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
 
@@ -26,28 +28,69 @@
         #fd{
             width: 100px;
             height: 100px;
-            background-color: #B2FF99;
+            background-color: #FF704D;
+            float: left;
         }
 
         #sd{
-            width: 100px;
-            height: 100px;
-            background-color: #FF704D;
+            width: 110px;
+            height: 110px;
+            background-color: #FFFF85;
+            float: left;
         }
 
         #td{
-            width: 100px;
-            height: 100px;
-            background-color: #FFFF85;
+            width: 120px;
+            height: 120px;
+            background-color: #B2FF99;
+            float: left;
+        }
+
+        #container{
+            width: 250px;
+            height: 300px;
+            background-color: silver;
+        }
+
+        #text{
+            clear: left;
+        }
+
+        span
+        {
+            float:left;
+            width:0.7em;
+            font-size:400%;
+            font-family:algerian,courier;
+            line-height:80%;
         }
 
     </style>
 </head>
 <body>
 
-<div id="fd"></div>
-<div id="sd"></div>
-<div id="td"></div>
+<div id="container">
+    <div id="fd"></div>
+    <div id="sd"></div>
+    <div id="td"></div>
+    <div id="text">helloworld!</div>
+</div>
+
+
+<p>
+<span>T</span>his is some text.
+This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
 
 </body>
 </html>
