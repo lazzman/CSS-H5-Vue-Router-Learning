@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>内边距</title>
+<style>
+    /*
+    内边距：
+        内边距在content外，边框内
+
+    内边距属性：
+        padding 设置所有边距
+        padding-bottom 设置底边距
+        padding-left 设置左边距
+        padding-right 设置右边距
+        padding-top 设置上边距
+
+    */
+
+    #outter{
+        width: 100px;
+        height: 100px;
+        border: solid 1px #FF704D;
+        box-shadow: silver 10px 10px 10px;
+    }
+
+    #inner{
+        position: relative;
+        left: 10%;
+        top: 10%;
+        width: 60%;
+        height: 60%;
+        border: dotted 1px #FF00FF;
+
+        padding: 10px;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+<div id="outter">
+    <div id="inner">
+
+    </div>
+</div>
+
+</body>
+</html>
