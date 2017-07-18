@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对齐</title>
+    <style>
+        /*
+        1. 使用margin属性进行水平对齐
+        2. 使用position属性进行左右对齐
+        3. 使用float属性进行左右对齐
+        */
+
+        body{
+            /*去掉body的外边距*/
+            margin: 0px;
+        }
+
+        .div1{
+            width: 70%;
+            height: 500px;
+            background-color: red;
+            /*使用margin来居中*/
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .div2{
+            width: 70%;
+            height: 500px;
+            background-color: #cad23e;
+            /*居左或居右*/
+            position: absolute;
+            right: 0px; /*右对齐*/
+            /*left: 0px; !*左对齐*!*/
+        }
+
+        .div3{
+            width: 70%;
+            height: 500px;
+            background-color: #0000FF;
+            /*居左或居右*/
+            float: left; /*左对齐*/
+            /*float: right !*右对齐*!*/
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="div1">
+    使用margin水平对齐
+</div>
+
+<div class="div2">
+    使用position属性进行左右对齐
+</div>
+
+<div class="div3">
+    使用float属性进行左右对齐
+</div>
+
+</body>
+</html>
