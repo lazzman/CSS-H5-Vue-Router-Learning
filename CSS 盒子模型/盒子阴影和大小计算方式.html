@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子阴影和大小计算方式</title>
+    <style>
+
+        /*
+        盒子阴影
+        */
+        .sd{
+            background-color: #FF704D;
+            box-shadow: 10px 10px 2px gray;
+            width: 300px;
+            height: 150px;
+        }
+
+        /*
+        指定针对元素的宽度和高度的计算方法
+        */
+        #d1{
+            box-sizing: border-box; /*当前元素高度与宽度包含在盒子中，总体宽度包含内外边距*/
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background-color: #00FF00;
+        }
+        #d2{
+            box-sizing: content-box; /*当前元素高度与宽度不包含在盒子中，高度宽度仅指内容宽度，总体宽度需要加上内外边距*/
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background-color: #FF00FF;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="sd"></div>
+
+<div id="d1"></div>
+<div id="d2"></div>
+
+</body>
+</html>
