@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子相关样式</title>
+    <style>
+        .div{
+            background-color: #00FF00;
+            /*display: inline; !*inline无法设置高度宽度*!*/
+            display: inline-block; /*inline-block可以设置宽度高度*/
+            width: 300px;
+            height: 100px;
+        }
+
+        .span{
+            background-color: #FF00FF;
+            display: inline; /*inline无法设置高度宽度*/
+            width: 300px;
+            height: 100px;
+        }
+
+        .t1{
+            margin: 20px 0px;
+            border: outset 3px #000000;
+            display: inline-table; /*将table转为行级元素，保持表格样式不变*/
+        }
+
+        .t2{
+            margin: 20px 0px;
+            border: outset 3px #FF00FF;
+            display: inline; /*将table转为行级元素，表格样式变了*/
+        }
+
+        td{
+            border: outset 3px #000000 ;
+        }
+
+        .list{
+            display: list-item; /*列表的形式显示*/
+            width: 300px;
+            height: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="div">div元素</div>
+<div class="div">div元素</div>
+<span class="span">span元素</span>
+<span class="span">span元素</span>
+
+
+<table class="t1">
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+</table>
+你好！
+
+<table class="t2">
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+</table>
+你好！
+
+<div class="list">DIV转换成列表展示</div>
+<div class="list">DIV转换成列表展示</div>
+<div class="list">DIV转换成列表展示</div>
+
+</body>
+</html>

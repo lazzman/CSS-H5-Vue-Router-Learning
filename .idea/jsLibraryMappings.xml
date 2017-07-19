@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{ExtJS GPL-4.2, angular-DefinitelyTyped, extjs-DefinitelyTyped, jQuery UI-1.10.2, jQuery-2.0.0, jquery-DefinitelyTyped, react-DefinitelyTyped, vue-i18n-DefinitelyTyped, vue-resource-DefinitelyTyped}" />
+  </component>
+</project>
