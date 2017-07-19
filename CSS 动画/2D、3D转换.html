@@ -2,25 +2,53 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>2D、3D转换</title>
     <style>
         /*
         1、通过css3转换，我们能够对元素进行移动、缩放、转动、拉长或拉伸
         转换是使元素改变形状、尺寸和位置的一种效果
         可以使用2D、3D来转换元素
-        2、2D转换方法：
-            translate()
-            rotate()
-            scale()
-            skew()
-            matrix()
-        3、3D转换方法：
-            rotateX()
-            rotateY()
+        2、2D转换方法：http://www.w3school.com.cn/css3/css3_2dtransform.asp
+            translate() 通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数
+            rotate() 通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。
+            scale() 通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数。
+            skew() 通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数。
+            matrix() matrix() 方法把所有 2D 转换方法组合在一起。matrix() 方法需要六个参数，包含数学函数，允许您：旋转、缩放、移动以及倾斜元素。
+        3、3D转换方法：http://www.w3school.com.cn/css3/css3_3dtransform.asp
+            rotateX() 通过 rotateX() 方法，元素围绕其 X 轴以给定的度数进行旋转。
+            rotateY() 通过 rotateY() 方法，元素围绕其 Y 轴以给定的度数进行旋转。
         */
+
+        .d1{
+            width: 100px;
+            height: 100px;
+            background-color: #FF00FF;
+
+            /*2D*/
+            /*transform: translate(100px,100px); !* 位移*!*/
+            /*-webkit-transform: translate(100px,100px); 不同浏览器需要单独配置*/
+
+            /*transform: rotate(30deg); !* 旋转*!*/
+
+            /*transform: scale(1,2); !*缩放*!*/
+
+            /*transform: skew(10deg,20deg); !*翻转*!*/
+
+            /*transform:matrix(0.866,0.5,-0.5,0.866,0,0); !*混合*!*/
+
+
+            /*3D*/
+            transform: rotateX(30deg);
+            transform: rotateY(30deg);
+        }
+
     </style>
+
 </head>
 <body>
+
+<div class="d1"></div>
 
 </body>
 </html>
