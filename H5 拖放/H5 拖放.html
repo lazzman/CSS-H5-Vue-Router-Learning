@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <title>H5 拖放</title>
     <style>
-        #d1{
+        #d1 {
             width: 200px;
             height: 200px;
             border: inset 1px #FF704D;
             display: inline-block;
         }
 
-        #d2{
+        #d2 {
             width: 200px;
             height: 200px;
             border: inset 1px #00FF00;
             display: inline-block;
         }
 
-        div img{
+        div img {
             width: 200px;
             height: 200px;
         }
@@ -36,23 +36,41 @@
 
 <img src="img/11.png"/>
 <img src="img/12.png"/>
-
+<img src="img/13.png"/>
+<img src="img/14.png"/>
 
 <div class="line"></div>
 
 <div id="container">
-    <div id="d1" ondragstart="startDrag">
-        <img draggable="true" src="img/1.jpg"/>
+    <div id="d1" ondragstart="startDrag(event)" ondragover="allowDrag(event)" ondrop="droping(event)">
+        <img id="dragObject" draggable="true" src="img/1.jpg"/>
     </div>
-    <div id="d2">
+    <div id="d2" ondragstart="startDrag(event)" ondragover="allowDrag(event)" ondrop="droping(event)">
 
     </div>
 </div>
 
 <script>
-function startDrag(ev) {
-    ev.dataTransfer.setData("el_id",ev.target.id);
-}
+    // 开始拖拽时回调
+    function startDrag(ev) {
+        // 当开始拖拽时将拖拽元素的ID存放到dataTransfer对象中
+        ev.dataTransfer.setData("elementId", ev.target.id);
+    }
+
+    // 设置允许放置拖拽对象
+    function allowDrag(ev) {
+        // 默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
+        ev.preventDefault();
+    }
+
+    // 放置时回调
+    function droping(ev) {
+        // 当放置被拖数据时，会发生 drop 事件。
+        ev.preventDefault();
+        var elementId = ev.dataTransfer.getData("elementId");
+        console.log(elementId);
+        ev.target.appendChild(document.getElementById(elementId));
+    }
 
 </script>
 
