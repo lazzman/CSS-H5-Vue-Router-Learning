@@ -41,7 +41,7 @@ var threeComponent = Vue.extend({
 var router = new VueRouter({
     routes: [
         {
-            path: "/",
+            path: "/", // 首页组件必须命名为"/"，否则无法自动打开首页
             name: "homePage",
             component: indexComponent
         }, {
